@@ -18,26 +18,39 @@
             background-color: #001f3f; /* Deep navy blue */
             color: #ffffff;
             padding: 20px;
-            text-align: center;
+            text-align: left;
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-left: 20px;
         }
         nav {
-            background-color: #001f3f; /* Deep navy blue */
-            color: #ffffff;
-            width: 200px;
-            padding: 20px 0;
-            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0; /* Light gray */
+            padding: 10px 0;
         }
         nav a {
-            color: #ffffff;
+            color: #333;
             display: block;
             padding: 15px;
             text-decoration: none;
             font-size: 18px;
             text-align: center;
+            background-color: #cccccc; /* Deep gray */
+            margin: 0 10px;
+            border-radius: 5px;
+            flex: 1;
+            max-width: 150px;
         }
         nav a:hover, nav a.active {
-            background-color: #0056b3;
+            border: 2px solid #001f3f; /* Deep navy blue */
         }
         .main-content {
             display: flex;
@@ -50,46 +63,4 @@
         h2 {
             font-size: 24px;
             border-bottom: 2px solid #001f3f;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #001f3f;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
-            position: sticky;
-            bottom: 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Md Anas Abdullah</h1>
-        <p>Master's Student in Electrical and Computer Engineering at McMaster University</p>
-        <p>Research and Teaching Assistant</p>
-    </header>
-    
-    <div class="main-content">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="education.html" class="active">Education Background</a>
-            <a href="experience.html">Experience</a>
-            <a href="research.html">Research Work</a>
-            <a href="contact.html">Contact Info</a>
-        </nav>
-
-        <div class="container">
-            <h2>Education Background</h2>
-            <p>Master's in Electrical and Computer Engineering, McMaster University (Expected 2024)</p>
-            <p>Bachelor's in Electrical Engineering, [Your Previous University] (Year)</p>
-        </div>
-    </div>
-    
-    <footer>
-        <p>&copy; 2024 Md Anas Abdullah. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+            padding-bottom: 10
