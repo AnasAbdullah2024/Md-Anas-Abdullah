@@ -11,8 +11,8 @@
             margin: 0;
             padding: 0;
             display: flex;
-            min-height: 100vh;
             flex-direction: column;
+            height: 100vh;
         }
         header {
             background-color: #001f3f; /* Deep navy blue */
@@ -20,12 +20,19 @@
             padding: 20px;
             text-align: center;
             width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #f0f0f0; /* Light gray */
             padding: 10px 0;
+            position: fixed;
+            top: 80px;
+            width: 100%;
+            z-index: 1000;
         }
         nav a {
             color: #333;
@@ -37,8 +44,6 @@
             background-color: #cccccc; /* Deep gray */
             margin: 0 10px;
             border-radius: 5px;
-            flex: 1;
-            max-width: 150px;
         }
         nav a.active {
             background-color: #001f3f; /* Deep navy blue */
@@ -50,6 +55,8 @@
         .main-content {
             display: flex;
             flex: 1;
+            margin-top: 140px; /* Adjust based on header and nav height */
+            overflow-y: auto;
         }
         .container {
             flex: 1;
@@ -67,8 +74,8 @@
             text-align: center;
             padding: 10px;
             width: 100%;
-            position: sticky;
-            bottom: 0;
+            position: relative;
+            z-index: 1000;
         }
     </style>
 </head>
